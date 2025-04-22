@@ -1,6 +1,6 @@
 # 🥫 API Pantry - Định danh sản phẩm qua ảnh sử dụng YOLO
 
-API này sử dụng mô hình YOLOv8 được huấn luyện sẵn để phát hiện các mặt hàng thường thấy trong nhà bếp (ví dụ: bánh, sữa, mì, cháo, fami, oishi...). Kết quả trả về gồm tên mặt hàng, độ chính xác và giá tiền tương ứng, cùng với tổng chi phí các mặt hàng trong ảnh.
+API này sử dụng mô hình YOLO12x được huấn luyện sẵn để phát hiện các mặt hàng thường thấy trong nhà bếp (ví dụ: bánh, sữa, mì, cháo, fami, oishi...). Kết quả trả về gồm tên mặt hàng, độ chính xác và giá tiền tương ứng, cùng với tổng chi phí các mặt hàng trong ảnh.
 
 ---
 
