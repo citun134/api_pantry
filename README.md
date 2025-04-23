@@ -1,6 +1,6 @@
 # 🥫 API Pantry - Định danh sản phẩm qua ảnh sử dụng YOLO
 
-API này sử dụng mô hình YOLO12x được huấn luyện sẵn để phát hiện các mặt hàng thường thấy trong nhà bếp (ví dụ: bánh, sữa, mì, cháo, fami, oishi...). Kết quả trả về gồm tên mặt hàng, độ chính xác và giá tiền tương ứng, cùng với tổng chi phí các mặt hàng trong ảnh.
+API này sử dụng mô hình YOLO12n được huấn luyện sẵn để phát hiện các mặt hàng thường thấy trong nhà bếp (ví dụ: bánh, sữa, mì, cháo, fami, oishi...). Kết quả trả về gồm tên mặt hàng, độ chính xác và giá tiền tương ứng, cùng với tổng chi phí các mặt hàng trong ảnh.
 
 ## 📦 Cài đặt
 
@@ -66,7 +66,7 @@ Mặc định server sẽ chạy tại: `http://127.0.0.1:8000`
 ## 🛠 Kiến trúc hệ thống
 
 - **Framework:** FastAPI
-- **Model Detection:** YOLO12x (qua thư viện `ultralytics`)
+- **Model Detection:** YOLO12n (qua thư viện `ultralytics`)
 - **Xử lý ảnh:** OpenCV
 - **Ghi log:** `logging`
 - **Ảnh hỗ trợ:** JPG, PNG (HEIC cần chuyển đổi thành JPG or PNG)
@@ -90,7 +90,7 @@ api_pantry/
 ## 👩‍💻 Tác giả
 
 **Tô Văn Tú**  
-Custom Object Detection API using YOLO12x + FastAPI
+Custom Object Detection API using YOLO12n + FastAPI
 
 ---
 
