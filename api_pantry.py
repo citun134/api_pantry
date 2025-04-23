@@ -10,7 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from ultralytics import YOLO
 import json
 
-best_yolo = r'D:\PyCharm\pythonProject\yolo_api_pantry\best.pt'
+best_yolo = r'model/yolo12n/best.pt'
 # image_path = r"D:\PyCharm\pythonProject\yolo_api_pantry\IMG_1264_image_017.jpg"
 
 def run_yolo_inference(model_path: str, image_path: str):
@@ -115,7 +115,7 @@ async def detect_face(request: Request, file: UploadFile = File(...)):
         # result = run_yolo_inference(best_yolo, temp_path)
         detections = run_yolo_inference(best_yolo, temp_path)
         result = {
-            "detections": detections,
+            "items": detections,
         }
         end_time = time.time()
 
