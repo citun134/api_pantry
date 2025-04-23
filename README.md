@@ -4,7 +4,7 @@ API này sử dụng mô hình YOLO12x được huấn luyện sẵn để phát
 
 ---
 
-## 🚀 Mô hình đã huấn luyện
+## 🚀 Mô hình đã huấn luyện Yolo12x
 
 🔗 [Tải file `best.pt` từ Google Drive (113MB)](https://drive.google.com/file/d/1DcpLGqtxU2aGA92R_EFn7e1vEtYdYJFH/view?usp=drive_link)
 
@@ -87,6 +87,7 @@ Mặc định server sẽ chạy tại: `http://127.0.0.1:8000`
 
 ```
 api_pantry/
+├── model/yolo12n/best.pt
 ├── api_pantry.py         # FastAPI server chính
 ├── best.pt               # File YOLOv8 đã huấn luyện
 ├── detection_results.log # file log
