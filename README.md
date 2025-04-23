@@ -2,16 +2,6 @@
 
 API này sử dụng mô hình YOLO12x được huấn luyện sẵn để phát hiện các mặt hàng thường thấy trong nhà bếp (ví dụ: bánh, sữa, mì, cháo, fami, oishi...). Kết quả trả về gồm tên mặt hàng, độ chính xác và giá tiền tương ứng, cùng với tổng chi phí các mặt hàng trong ảnh.
 
----
-
-## 🚀 Mô hình đã huấn luyện Yolo12x
-
-🔗 [Tải file `best.pt` từ Google Drive (113MB)](https://drive.google.com/file/d/1DcpLGqtxU2aGA92R_EFn7e1vEtYdYJFH/view?usp=drive_link)
-
-**Sau khi tải về**, đặt file `best.pt` vào thư mục gốc của project, cùng với `api_pantry.py`.
-
----
-
 ## 📦 Cài đặt
 
 ```bash
@@ -89,7 +79,6 @@ Mặc định server sẽ chạy tại: `http://127.0.0.1:8000`
 api_pantry/
 ├── model/yolo12n/best.pt
 ├── api_pantry.py         # FastAPI server chính
-├── best.pt               # File YOLOv8 đã huấn luyện
 ├── detection_results.log # file log
 ├── temp_uploads/         # Thư mục lưu ảnh tạm
 ├── requirements.txt      # Danh sách thư viện
